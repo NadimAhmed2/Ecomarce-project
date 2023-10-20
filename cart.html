@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is an ecommerce project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <!-- navbar  -->
+   <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+   <nav id="menu" class="hidden">
+        <ul class="nav__upper flex-space-around">
+           
+            </li>
+            <li class="nav__list">
+                <a href="/index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__list">
+                <a href="register.html" class="nav__link">Register</a>
+            </li>
+            <li class="nav__list">
+                <a href="login.html" class="nav__link">Login</a>
+            </li>
+            <li class="nav__list">
+                <a href="/index.html" class="nav__link">Logout</a>
+            </li>
+            <li class="nav__list">
+                <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__list">
+                <a href="profile.html" class="nav__link">
+                    <img src="image/n.png" class="profile__icon" alt="profile">
+                </a>
+                
+            </li>
+        </ul>
+    </nav>
+   <!-- navbar  -->
+   <main>
+    <div class="cart flex-center">
+        <div class="cart__items">
+            <div class="cart__items-title card">
+                <h2>Shopping Cart [2 items]</h2>
+                <div class="cart__items-action">
+                    <label for="select">
+                        <input type="checkbox" name="select" id="select">
+                    </label>Select all items
+                    <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                    <button class="btn">Shop More</button>
+                </div>
+            </div>
+
+            <div class="cart__item card flex-space-around">
+                <input type="checkbox" name="" id="">
+                <img src="image/drone.jpg" alt="drone" class="cart__item-img">
+                <div class="cart__item-description">
+                    <h3 class="product__name">Sony V-20 Drone</h3>
+                    <h4 class="product__price">Price: 499.99$</h4>
+                    <p class="cart__item-shipping">Free Shipping</p>
+                </div>
+                <div class="cart__item-actions">
+                    <button class="btn"><i class="fa-solid fa-trash"></i></button>
+
+                    <div>
+                        <button class="btn"><i class="fa-solid fa-add"></i></button>
+                        <span>4</span>
+                        <button class="btn"><i class="fa-solid fa-minus"></i></button>
+                    </div>
+                </div>
+            </div>
+        
+
+        
+            
+            <div class="cart__item card flex-space-around">
+                <input type="checkbox" name="" id="">
+                <img src="image/camera1.jpg" alt="drone" class="cart__item-img">
+                <div class="cart__item-description">
+                    <h3 class="product__name">Sony WV70000 Camera</h3>
+                    <h4 class="product__price">Price: 399.99$</h4>
+                    <p class="cart__item-shipping">Free Shipping</p>
+                </div>
+                <div class="cart__item-actions">
+                    <button class="btn"><i class="fa-solid fa-trash"></i></button>
+
+                    <div>
+                        <button class="btn"><i class="fa-solid fa-add"></i></button>
+                        <span>2</span>
+                        <button class="btn"><i class="fa-solid fa-minus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart__payment">
+            <div class="cart__payment-summary card">
+                <h2>Payment Summary</h2>
+                <div>
+                    <p>Subtotal: </p>
+                    <p>$351.99</p>
+                </div>
+                <div>
+                    <p>Shipping Cost: </p>
+                    <p>$3.99</p>
+                </div>
+                <hr>
+                <div>
+                    <p>Total Cost: </p>
+                    <p>$355.98</p>
+                </div>
+                <button class="btn cart__payment-btn">Pay Now</button>
+            </div>
+            <div class="cart__payment-methods card">
+                <h2>Payment Methods</h2>
+               <div>
+                <i class="fa-brands fa-cc-visa fa-2x"></i>
+                <i class="fa-brands fa-cc-mastercard fa-2x"></i>
+                <i class="fa-brands fa-cc-amazon-pay fa-2x"></i>
+                <i class="fa-brands fa-apple-pay fa-2x"></i>
+                <i class="fa-brands fa-paypal fa-2x"></i>
+               </div>
+            </div>
+
+        </div>
+    </div>
+   </main>
+
+   <!-- footer start here  -->
+   <footer class="footer flex-space-around">
+    <div class="flex-space-around">
+        <label for="subscribe"> Subscribe To Newslatter: </label>
+        <input type="email" id="subscribe" name="subscribe" class="footer__input"
+        placeholder="Email Address"/>
+        <button class="btn subscribe__btn">Subscribe
+
+        </button>
+    </div>
+    <div>
+        <p>
+            &copy; 2023 Nadim Tech. All right regerved 
+        </p>
+    </div>
+   </footer>
+   <!-- footer ends here  -->
+   <script src="./index.js"></script>
+
+
+</body>
+</html>
